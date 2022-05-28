@@ -8,10 +8,7 @@ def decorator(num):
             while True:
                 time.sleep(num)
                 fn(*args, **kwargs)
-
-
         return inner
-
     return sencond
 
 
