@@ -51,6 +51,6 @@ while True:
                 #取消对应的套接字在epoll 的注册
                 connections[fd][0].close()
                 #关闭对应的套件字
-                print("%s---offline---" % str(connections[new_conn][1]))
+                print("%s---offline---" % str(connections[fd][1]))
                 del connections[fd]
                 
